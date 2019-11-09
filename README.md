@@ -38,8 +38,8 @@ Rachel Tatman, Kaggle user has published three sets of data regarding diversity 
 During the ETL process, our team put the effort in the data cleaning process. Our goal is to drop data that do not provide measurable value to users of the database such as analysts.  To achieve our goal, we used three approaches during the transform process where is our focus for this project.
 1) Extract data from www.kaggle.com in .csv format
 2) Transform
-          	2a) Inspect: This is the initial process once CSV file is loaded to Jupyter Notebook. Once function has been used to quickly identify the dataset’s column names, total rows, total columns, null value status, data types and memory usage.
-          	2b) Filtering: during this step, we look into any column that has numeric value that either has “na” or “0” value, then we examine if these rows provide any meaningful insights or they can be dropped.  After carefully inspect these data, we have drop 0.0 percentage from distributions.csv and 0 count from revel_EE01.csv.Our next step in filtering process is the inspect each csv by column at a detail level using  df[‘column_name’].unique()
-          	2c) Cleaning: the last step in transform process is to clean data at detail level such as naming convention in ethnicity or job category. 
+          	- Inspect: This is the initial process once CSV file is loaded to Jupyter Notebook. Once function has been used to quickly identify the dataset’s column names, total rows, total columns, null value status, data types and memory usage.
+          	- Filtering: during this step, we look into any column that has numeric value that either has “na” or “0” value, then we examine if these rows provide any meaningful insights or they can be dropped.  After carefully inspect these data, we have drop 0.0 percentage from distributions.csv and 0 count from revel_EE01.csv.Our next step in filtering process is the inspect each csv by column at a detail level using  df[‘column_name’].unique()
+          	- Cleaning: the last step in transform process is to clean data at detail level such as naming convention in ethnicity or job category. 
 3) Load data set into PostgreSQL as tables using sqlAlchemy. 
 
